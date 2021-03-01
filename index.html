@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pullman Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flickity.css" media="screen">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="main-logo">
+            <img src="./images/Pullmanlogo.svg">
+        </div>
+        <nav>
+            <div class="nav-menus">
+            <a href="#">Home</a>
+            <a href="#hotels">The Hotels</a>
+            <a href="#rooms">Rooms and Suite</a>
+            <a href="#">Other Services</a>
+            <a href="#news">Special Offers</a>
+            <a href="#">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+    <section class="spotlight">
+        <div class="booking">
+            <h1>Check Available</h1>
+            <form>
+                <div class="booking-form">
+                    <div class="booking-form-details-big">
+                        <label for="city">Country/City:</label>
+                        <input type="text" id="city" name="city" placeholder="E.g, Bangkok, Thailand" width="200" required>
+                    </div>
+                    <div class="booking-form-details-med">
+                        <label for="arrival">Arrival:</label>
+                        <input type="date" id="arrival" name="arrival" required>
+                    </div>
+                    <div class="booking-form-details-med">
+                        <label for="departure">Departure:</label>
+                        <input type="date" id="departure" name="departure" required>
+                    </div>
+                    <div class="booking-form-details" id="booking-form-details-persons">
+                    <label for="persons">Persons:</label>
+                    <select id="persons" required>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                    </select>
+                    </div>
+                    <input type="submit" value="Check" id="search-button">
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <section class="hotels" id="hotels">
+        <h1>The hotels</h1>
+        <p>Pullman hotels and resorts is an upscale international hotel brand owned by Accord Hotels, a French branch.
+            <br>
+            Pullman has over 117 hotels and resorts in 33 countries in Europe, Africa, the Middle-East, Asia Pacific and Latin America.
+        </p>
+        <div class="hotels-cards">
+            <div class="hotels-cards-row">
+                <div class="hotels-card">
+                    <div class="hotels-card-photo">
+                        <a href="https://www.pullmanauckland.co.nz/">
+                            <img src="images/Pullman06.jpeg">
+                        </a>
+                    </div>
+                    <h3>Auckland</h3>
+                </div>
+                <div class="hotels-card">
+                    <div class="hotels-card-photo">
+                        <a href="https://www.pullman-berlin-schweizerhof.com/en/">
+                            <img src="images/Pullman01.jpg">
+                        </a>
+                    </div>
+                    <h3>Berlin</h3>
+                </div>
+                <div class="hotels-card">
+                    <div class="hotels-card-photo">
+                        <a href="https://www.pullmanauckland.co.nz/">
+                            <img src="images/Pullman03.jpg">
+                        </a>
+                    </div>
+                    <h3>New Delhi</h3>
+                </div>
+            </div>
+
+            <div class="hotels-cards-row">
+                <div class="hotels-card">
+                    <div class="hotels-card-photo">
+                        <a href="https://www.pullmanauckland.co.nz/">
+                            <img src="images/Pullman04.jpg">
+                        </a>
+                    </div>
+                    <h3>Barcelona</h3>
+                </div>
+                <div class="hotels-card">
+                    <div class="hotels-card-photo">
+                        <a href="https://www.pullmanauckland.co.nz/">
+                            <img src="images/Pullman05.jpg">
+                        </a>
+                    </div>
+                    <h3>Bangkok</h3>
+                </div>
+                <div class="hotels-card">
+                    <div class="hotels-card-photo">
+                        <a href="https://www.pullmanauckland.co.nz/">
+                            <img src="images/Pullman02.jpeg">
+                        </a>
+                    </div>
+                    <h3>London</h3>
+                </div>
+            </div>
+        </div>
+        <div class="checkmore-button">
+            <a href="#">Check More >>></a>
+        </div>  
+    </section>
+
+    <section class="rooms" id="rooms">
+        <h1>Rooms and Suit</h1>
+        <div class="carousel" data-flickity='{"wrapAround": true }'>
+            <div class="carousel-cell">
+                <div class="room-details">
+                    <h2>Premium Double King Room</h2>
+                    <ul>
+                        <li>Max occupandy: 02 Persons</li>
+                        <li>Size: 35-40 sqm</li>
+                        <li>View: City</li>
+                        <li>Sound-proof</li>
+                        <li>Free Wifi, laundry</li>
+                    </ul>
+                    <button>From 19.99$/night</button>
+                </div>
+                <div class="room-image">
+                    <img src="images/167534297.jpg" alt="room-1"/>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="room-details">
+                    <h2>Premium Double King Room</h2>
+                    <ul>
+                        <li>Max occupandy: 02 Persons</li>
+                        <li>Size: 35-40 sqm</li>
+                        <li>View: City</li>
+                        <li>Sound-proof</li>
+                        <li>Free Wifi, laundry</li>
+                    </ul>
+                    <button>From 19.99$/night</button>
+                </div>
+                <div class="room-image">
+                    <img src="images/167789891.jpg" alt="room-2"/>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="room-details">
+                    <h2>Premium Double King Room</h2>
+                    <ul>
+                        <li>Max occupandy: 02 Persons</li>
+                        <li>Size: 35-40 sqm</li>
+                        <li>View: City</li>
+                        <li>Sound-proof</li>
+                        <li>Free Wifi, laundry</li>
+                    </ul>
+                    <button>From 19.99$/night</button>
+                </div>     
+                <div class="room-image">
+                    <img src="images/207786081.jpg" alt="room-3"/>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="room-details">
+                    <h2>Premium Double King Room</h2>
+                    <ul>
+                        <li>Max occupandy: 02 Persons</li>
+                        <li>Size: 35-40 sqm</li>
+                        <li>View: City</li>
+                        <li>Sound-proof</li>
+                        <li>Free Wifi, laundry</li>
+                    </ul>
+                    <button>From 19.99$/night</button>
+                </div>
+                <div class="room-image">
+                    <img src="images/room04.jpg" alt="room-4"/>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="room-details">
+                    <h2>Premium Double King Room</h2>
+                    <ul>
+                        <li>Max occupandy: 02 Persons</li>
+                        <li>Size: 35-40 sqm</li>
+                        <li>View: City</li>
+                        <li>Sound-proof</li>
+                        <li>Free Wifi, laundry</li>
+                    </ul>
+                    <button>From 19.99$/night</button>
+                </div>
+                <div class="room-image">
+                    <img src="images/room05.jpg" alt="room-5"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="utilities" id="utilities">
+        <div class="utilities-row">
+            <div class="utility">
+                <div class="utility-image">
+                    <img src="images/Wifi.svg" alt="utility-1">
+                </div>
+                <div class="utility-info">
+                    <h3>Free-wifi</h3>
+                    <p>Two Wifi channels on each floor with strong wave connection, allows you to surf the web freely.</p>
+                </div>
+            </div>
+            <div class="utility">
+                <div class="utility-image">
+                    <img src="images/Airport.svg" alt="utility-1">
+                </div>
+                <div class="utility-info">
+                    <h3>Airport Transfers</h3>
+                    <p>Shuttle bus service that helps tranfer you and your family members from the airport and vice versa.</p>
+                </div>
+            </div>
+        </div>
+        <div class="utilities-row">
+            <div class="utility">
+                <div class="utility-image">
+                    <img src="images/Phone.svg" alt="utility-1">
+                </div>
+                <div class="utility-info">
+                    <h3>24/24 Front Desk</h3>
+                    <p>All day support from the friendly and professional frontdesk staffs.</p>
+                </div>
+            </div>
+            <div class="utility">
+                <div class="utility-image">
+                    <img src="images/Gym.svg" alt="utility-1">
+                </div>
+                <div class="utility-info">
+                    <h3>Free gym & Yoga</h3>
+                    <p>Maintain a great health while on vacation with modern facilities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="extra-info" id="extra-info">
+        <div class="extra-info-container">
+            <div class="intro">
+                <div class="text">
+                    <h1>Our World. Your Playground</h1>
+                    <p>Experience Pullman as a Global Nomad</p>
+                </div>
+                <button>Discover</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="news" id="news">
+        <div class="news-container">
+            <div class="news-section-title">
+                <h1>LASTEST NEWS</h1>
+            </div>
+            <div class="news-cards">
+                <div class="news-card">
+                    <img src="images/HotelNews1.jpg" alt="news-1">
+                    <h3>Pullman Kuala Lumpur won its 2nd trophy for best lounge design!</h3>
+                    <a href="#">Read more >></a>
+                </div>
+                <div class="news-card">
+                    <img src="images/HotelNews2.jpg" alt="news-2">
+                    <h3>The 38th Olympic Conference to be held in Pullman New Dehli.</h3>
+                    <a href="#">Read more >></a>
+                </div>
+                <div class="news-card">
+                    <img src="images/HotelNews3.jpg" alt="news-3">
+                    <h3>50% Discount on all drink every Friday night from 6pm - 9pm.</h3>
+                    <a href="#">Read more >></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>PULLMAN</h3>
+                <p id="pullman-footer-sum">Curabitur eu velit et lorem hendrerit consequat at phareroy venenatis.</p>
+                <a href="https://www.facebook.com/pullmansaigoncentre"><img src="images/LogoFacebook.svg" alt="fb-icon" id="footer-logo"></a>
+                <a href="https://twitter.com/pullmanhotels?lang=en"><img src="images/LogoTwitter.svg" alt="twitter-icon" id="footer-logo"></a>
+            </div>
+            <div class="footer-column">
+                <h3>HELP & CONTACT</h3>
+                <ul>
+                    <li><a href="#">My reservations</a></li>
+                    <li><a href="#">Best price guarantee</a></li>
+                    <li><a href="#">Assistance</a></li>
+                    <li><a href="#">Pullman on mobile</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>CORPORATE</h3>
+                <ul>
+                    <li><a href="#">Press section</a></li>
+                    <li><a href="#">Management & franchise</a></li>
+                    <li><a href="#">Sustainable dvpt</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>NEWSLETTER</h3>
+                <p id="newsletter">Enter your email to sign up for the lastest news & offers from us.</p>
+                <form>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <input type="submit" value="Subcribe" id="subcribe-button">
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>2021 Pullman Hotels and Resorts. All Rights Reserved</p>
+        </div>
+    </section>
+
+    <script src="flickity.pkgd.min.js"></script>
+</body>
+</html>
