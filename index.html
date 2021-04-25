@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pullman Hotel</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="flickity.css" media="screen">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,10 +19,10 @@
             <div class="nav-menus">
             <a href="#">Home</a>
             <a href="#hotels">The Hotels</a>
-            <a href="#rooms">Rooms and Suite</a>
-            <a href="#">Other Services</a>
-            <a href="#news">Special Offers</a>
-            <a href="#">Contact Us</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#">Services</a>
+            <a href="#news">Offers</a>
+            <a href="#">Contact</a>
             </div>
         </nav>
     </header>
@@ -63,11 +63,13 @@
     </section>
     
     <section class="hotels" id="hotels">
-        <h1>The hotels</h1>
+        <div class="content-container">
+        <h1><b>THE HOTELS</b></h1>
         <p>Pullman hotels and resorts is an upscale international hotel brand owned by Accord Hotels, a French branch.
             <br>
             Pullman has over 117 hotels and resorts in 33 countries in Europe, Africa, the Middle-East, Asia Pacific and Latin America.
         </p>
+        </div>
         <div class="hotels-cards">
             <div class="hotels-cards-row">
                 <div class="hotels-card">
@@ -129,90 +131,84 @@
     </section>
 
     <section class="rooms" id="rooms">
-        <h1>Rooms and Suit</h1>
-        <div class="carousel" data-flickity='{"wrapAround": true }'>
-            <div class="carousel-cell">
-                <div class="room-details">
-                    <h2>Premium Double King Room</h2>
-                    <ul>
-                        <li>Max occupandy: 02 Persons</li>
-                        <li>Size: 35-40 sqm</li>
-                        <li>View: City</li>
-                        <li>Sound-proof</li>
-                        <li>Free Wifi, laundry</li>
-                    </ul>
-                    <button>From 19.99$/night</button>
+        <h1>ROOMS AND SUITS</h1>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex flex-wrap">
+                    <div class="carousel-inner-div car-1">
+                        <img src="images/room04.jpg">
+                    </div>
+                    <div class="carousel-inner-div car-2">
+                        <div class="room-details">
+                        <h3><b></b>Premium Double King Room</b></h3>
+                        <ul>
+                            <li>Max occupancy: 02 Persons</li>
+                            <li>Size: 35-40 sqm</li>
+                            <li>View: City</li>
+                            <li>Sound-proof</li>
+                        </ul>
+                        <button>From 19.99$/night</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="room-image">
-                    <img src="images/167534297.jpg" alt="room-1"/>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex flex-wrap">
+                    <div class="carousel-inner-div car-1">
+                        <img src="images/room05.jpg">
+                    </div>
+                    <div class="carousel-inner-div car-2">
+                        <div class="room-details">
+                        <h3><b></b>Premium Double Twin Room</b></h3>
+                        <ul>
+                            <li>Max occupancy: 02 Persons</li>
+                            <li>Size: 30-35 sqm</li>
+                            <li>View: City</li>
+                            <li>Sound-proof</li>
+                        </ul>
+                        <button>From 15.99$/night</button>
+                        </div>
+                    </div>
                 </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex flex-wrap">
+                    <div class="carousel-inner-div car-1">
+                        <img src="images/167534297.jpg">
+                    </div>
+                    <div class="carousel-inner-div car-2">
+                        <div class="room-details">
+                        <h3><b></b>Premium Double King Deluxe</b></h3>
+                        <ul>
+                            <li>Max occupancy: 02 Persons</li>
+                            <li>Size: 45-50 sqm</li>
+                            <li>View: City</li>
+                            <li>Sound-proof</li>
+                        </ul>
+                        <button>From 24.99$/night</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
             </div>
-            <div class="carousel-cell">
-                <div class="room-details">
-                    <h2>Premium Double King Room</h2>
-                    <ul>
-                        <li>Max occupandy: 02 Persons</li>
-                        <li>Size: 35-40 sqm</li>
-                        <li>View: City</li>
-                        <li>Sound-proof</li>
-                        <li>Free Wifi, laundry</li>
-                    </ul>
-                    <button>From 19.99$/night</button>
-                </div>
-                <div class="room-image">
-                    <img src="images/167789891.jpg" alt="room-2"/>
-                </div>
-            </div>
-            <div class="carousel-cell">
-                <div class="room-details">
-                    <h2>Premium Double King Room</h2>
-                    <ul>
-                        <li>Max occupandy: 02 Persons</li>
-                        <li>Size: 35-40 sqm</li>
-                        <li>View: City</li>
-                        <li>Sound-proof</li>
-                        <li>Free Wifi, laundry</li>
-                    </ul>
-                    <button>From 19.99$/night</button>
-                </div>     
-                <div class="room-image">
-                    <img src="images/207786081.jpg" alt="room-3"/>
-                </div>
-            </div>
-            <div class="carousel-cell">
-                <div class="room-details">
-                    <h2>Premium Double King Room</h2>
-                    <ul>
-                        <li>Max occupandy: 02 Persons</li>
-                        <li>Size: 35-40 sqm</li>
-                        <li>View: City</li>
-                        <li>Sound-proof</li>
-                        <li>Free Wifi, laundry</li>
-                    </ul>
-                    <button>From 19.99$/night</button>
-                </div>
-                <div class="room-image">
-                    <img src="images/room04.jpg" alt="room-4"/>
-                </div>
-            </div>
-            <div class="carousel-cell">
-                <div class="room-details">
-                    <h2>Premium Double King Room</h2>
-                    <ul>
-                        <li>Max occupandy: 02 Persons</li>
-                        <li>Size: 35-40 sqm</li>
-                        <li>View: City</li>
-                        <li>Sound-proof</li>
-                        <li>Free Wifi, laundry</li>
-                    </ul>
-                    <button>From 19.99$/night</button>
-                </div>
-                <div class="room-image">
-                    <img src="images/room05.jpg" alt="room-5"/>
-                </div>
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
         </div>
     </section>
+
+<!-- UTILITIES SECTION -->
 
     <section class="utilities" id="utilities">
         <div class="utilities-row">
@@ -264,7 +260,7 @@
                     <h1>Our World. Your Playground</h1>
                     <p>Experience Pullman as a Global Nomad</p>
                 </div>
-                <button>Discover</button>
+                <a href="https://www.youtube.com/watch?v=5sDDvomg-6Q" target="_blank"><button>Discover</button></a>
             </div>
         </div>
     </section>
@@ -329,10 +325,11 @@
             </div>
         </div>
         <div class="copyright">
-            <p>2021 Pullman Hotels and Resorts. All Rights Reserved</p>
+            <p>© 2021 Pullman Hotels and Resorts. All Rights Reserved</p>
         </div>
     </section>
 
-    <script src="flickity.pkgd.min.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script></body>
 </html>
