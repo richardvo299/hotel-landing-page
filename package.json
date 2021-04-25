@@ -1,0 +1,19 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "redesigned landing page for pullman",
+  "main": "flickity.pkgd.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardvo299/hotel-landing-page.git"
+  },
+  "author": "Rick Vo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richardvo299/hotel-landing-page/issues"
+  },
+  "homepage": "https://github.com/richardvo299/hotel-landing-page#readme"
+}
